@@ -1,3 +1,5 @@
+/* Header */
+
 header {
     display: block;
     padding: 20px;
@@ -9,6 +11,7 @@ header {
     background-color: #fff;
 }
 
+/* Main */
 main {
     display: grid;
     background-color: rgb(245, 245, 245);
@@ -20,11 +23,14 @@ main {
     height: 100%;
 }
 
+/* Body */
 body {
     background-color: rgb(245, 245, 245);
     color: #333;
 }
 
+
+/* Section */
 section {
     display: grid;
     background-color: white;
@@ -43,6 +49,8 @@ section {
     margin-bottom: 20px;
 }
 
+
+/* Footer */
 footer {
     position: grid;
     background-color: #333;
@@ -52,6 +60,8 @@ footer {
     display: block;
 }
 
+
+/* Form */
 form {
     margin-bottom: 10px;
 }
@@ -66,6 +76,7 @@ label,
     padding-bottom: 10px;
 }
 
+/* Headings 1, 2, 3, and 4 */
 h1 {
     color: hsl(210, 90%, 53%);
     background-color: #333;
@@ -89,7 +100,7 @@ h4 {
     color: green;
 }
 
-/* Relative Units */
+/* Header, TeamMember, Navigtion with Relative Units */
 .header,
 .teamMember,
 .navigtion {
@@ -102,10 +113,14 @@ h4 {
     padding: 30px 20px 10px 40px;
 }
 
+
+/* Navigation */
 .navigtion {
     display: flex;
 }
 
+
+/* Paragraph, focused on meeting summary */
 p {
     margin-bottom: 1rlh;
     padding-top: 20px;
@@ -117,13 +132,13 @@ p {
     text-align: justify;
 }
 
-/* Absolute Units ----------------------------------------------------*/
+/* Company logo image */
 img {
     width: 300px;
     height: 200px;
     margin: auto;
     border-style: solid;
-    border-color: rgb(0, 110, 255);
+    border-color: rgb(6, 70, 155);
     border-width: 5px;
     border-radius: 50%;
 }
@@ -135,7 +150,7 @@ img {
     border-radius: 5px;
 }
 
-/* Margin */
+/* Margin styling */
 .container {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -143,39 +158,12 @@ img {
     margin-right: 40px;
 }
 
+/* box */
 .box {
     margin: 10px 20px 30px 40px;
 }
 
-/* border-style */
-.border-style {
-    border-top-style: solid;
-    border-right-style: dotted;
-    border-bottom-style: double;
-    border-left-style: dashed;
-}
-
-/* border-color */
-.border-color {
-    border-top-color: #ff0000;
-    border-right-color: #00ff00;
-    border-bottom-color: #0000ff;
-    border-left-color: #000;
-}
-
-/* border-width */
-.border-width {
-    border-top-width: 1px;
-    border-right-width: 2px;
-    border-bottom-width: 3px;
-    border-left-width: 4px;
-}
-
-/* border-radius */
-.border-radius {
-    border-radius: 10px;
-}
-
+/* Navigation positioning */
 nav {
     padding: 10px;
     position: absolute;
@@ -247,7 +235,7 @@ button:active {
     background-color: #999;
 }
 
-/* Layouts */
+/* Layouts for box container */
 .box-container {
     display: flex;
     flex-direction: row;
@@ -296,15 +284,15 @@ button:active {
     }
 }
 
-/* Import the font from Google Fonts */
+/* Imported the font from Google Fonts - Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* Set the font family for the body text */
+/* Set the font for the text in the body */
 body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* Set the font weight for the h1 heading */
+/* Set the font family and weight for the text in h1, h2, h3, and h4 */
 h1,
 h2,
 h3,
@@ -313,24 +301,11 @@ h4 {
     font-weight: 700;
 }
 
-/* Class Selector */
-.my-class {
-    color: rgb(126, 5, 5);
-}
-
-/* ID Selector */
-#my-id {
-    font-size: 16px;
-}
+/* SELECTORS */
 
 /* Universal Selector */
 * {
     box-sizing: border-box;
-}
-
-/* Element Selector */
-h1 {
-    font-weight: bold;
 }
 
 /* Attribute Selector */
