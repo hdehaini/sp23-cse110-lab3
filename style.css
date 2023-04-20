@@ -1,20 +1,53 @@
-/* Color */
-/* apply colors to your HTML elements */
-/* red, green, blue, alpha values */
-/* hex codes */
-/* hue, saturation, lightness, alpha values */
-/* Color name (i.e ‘orange’) */
+header {
+    display: block;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+main {
+    display: block;
+    background-color: rgb(245, 245, 245);
+    padding: 20px;
+    position: absolute;
+    top: 750px;
+    left: 50px;
+    width: 80%;
+    height: 90%;
+}
+
 body {
     background-color: rgb(245, 245, 245);
     color: #333;
 }
 
+footer {
+    position: static;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    display: block;
+    clear: both;
+}
+
 h1 {
-    color: hsl(210, 100%, 50%);
+    color: hsl(210, 78%, 40%);
+    background-color: #333;
+    font-size: 3rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    text-align: left;
+    width: 100%;
 }
 
 h2 {
     color: rgba(0, 0, 255, 0.5);
+    text-decoration: underline;
 }
 
 h3 {
@@ -25,41 +58,37 @@ h4 {
     color: green;
 }
 
-/* Background */
-/* apply background styles to your elements */
-h1 {
-    background-color: #333;
-    color: #fff;
-}
-
-/* Unit */
-/* units of measurement for sizing and spacing your elements */
-/* Use 3 unique relative units total */
-/* Use 3 unique absolute units total */
 /* Relative Units */
-.container {
-    width: 80%;
+div {
     margin: 2rem auto;
-    padding: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     text-align: center;
-}
-
-h1 {
-    font-size: 2.5rem;
-    margin-top: 1.5rem;
+    max-width: 90%;
+    min-width: 90%;
+    padding: 30px 20px 10px 40px;
 }
 
 p {
     margin-bottom: 1rem;
+    padding-top: 20px;
+    padding-right: 5%;
+    padding-bottom: 20px;
+    padding-left: 5%;
+    text-decoration: underline;
+    color: rgb(0, 128, 0);
+    text-align: justify;
 }
 
 /* Absolute Units ----------------------------------------------------*/
 img {
     width: 300px;
     height: 200px;
-    margin: 0 auto;
+    margin: auto;
+    border-style: solid;
+    border-color: rgb(0, 110, 255);
+    border-width: 5px;
+    border-radius: 50%;
 }
 
 .button {
@@ -69,88 +98,119 @@ img {
     border-radius: 5px;
 }
 
-@media (min-width: 768px) {
-    .container {
-        width: 70%;
-        font-size: 1.5rem;
-    }
-
-    h1 {
-        font-size: 3.5rem;
-    }
-
-    p {
-        margin-bottom: 1.5rem;
-    }
+/* Margin */
+.container {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 40px;
 }
 
-/* Box Model */
-/* configure the containers that hold your HTML content */
-/* margin: spacing between html elements */
-/* padding: spacing within html elements */
-/* border: borders around html elements */
-/* You must use both long and short hand notations for each of the following: margin, padding, border */
-/* Auto margins: margin: auto */
-h1 {
+.box {
+    margin: 10px 20px 30px 40px;
+}
+
+/* border-style */
+.border-style {
+    border-top-style: solid;
+    border-right-style: dotted;
+    border-bottom-style: double;
+    border-left-style: dashed;
+}
+
+/* border-color */
+.border-color {
+    border-top-color: #ff0000;
+    border-right-color: #00ff00;
+    border-bottom-color: #0000ff;
+    border-left-color: #000;
+}
+
+/* border-width */
+.border-width {
+    border-top-width: 1px;
+    border-right-width: 2px;
+    border-bottom-width: 3px;
+    border-left-width: 4px;
+}
+
+/* border-radius */
+.border-radius {
+    border-radius: 10px;
+}
+
+nav {
+    background-color: rgb(255, 224, 178);
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+}
+
+nav ul {
     margin: 0;
-    padding: 0.5rem;
-    border: 2px solid #333;
+    padding: 0;
+    list-style: none;
 }
 
-p {
-    margin: 0;
-    padding: 1rem;
-    border: 1px dotted #333;
+nav li {
+    display: inline-block;
+    margin-right: 10px;
 }
 
-/* Text */
-/* style your text */
-/* color */
-/* text-decoration */
-/* text-align */
-h1 {
-    text-align: center;
-}
-
-a {
-    color: #333;
+nav a {
+    display: block;
+    color: black;
     text-decoration: none;
 }
 
-/* Display */
-/* Experiment with these values: none, block, inline-block, inline. Include at least two of them in your page. */
-/* Apply these values to the display property */
-div {
-    display: inline-block;
-}
-
-span {
+section {
     display: block;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
-/* Sizing */
-/* set the height and width for an element */
-/* max-width */
-/* min-width */
-div {
-    max-width: 800px;
-    min-width: 400px;
+aside {
+    display: inline;
+    background-color: rgb(176, 224, 230);
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 20px;
 }
 
-/* Position */
-/* element positioning on the page */
-/* 2 of the following values: static, relative, fixed, absolute, sticky */
-/* Apply these values to the position property */
-h1 {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+/* Display */
+div.display-none {
+    display: none;
+}
+
+div.display-block {
+    display: block;
+    background-color: rgb(135, 206, 250);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+div.display-inline-block {
+    display: inline-block;
+    background-color: rgb(240, 128, 128);
+    padding: 20px;
+    margin-right: 20px;
+}
+
+div.display-inline {
+    display: inline;
+    background-color: rgb(255, 255, 0);
+    padding: 20px;
+    margin-right: 20px;
 }
 
 /* Pseudo-class */
-/* elements that exist in your document conditionally */
-/* :hover */
-/* :active */
 a:hover {
     color: #999;
 }
@@ -160,27 +220,44 @@ button:active {
 }
 
 /* Layouts */
-/* Flexbox */
-/* allow your elements to lay themselves out automatically */
-/* apply flex to the display property */
-/* Must have more than two children within the element that is using flexbox. Must use minimum three of the flexbox related attributes */
-/* justify-content */
-/* align-items */
-/* flex-direction */
-/* layouts */
-.container {
+.box-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border: 2px solid black;
+}
+
+/* Child element styles */
+.box-item {
+    background-color: lightblue;
+    border: 1px solid blue;
+    padding: 10px;
+    margin: 10px;
+    flex: 1;
+}
+
+.box-item:first-child {
+    background-color: lightgreen;
+}
+
+.box-item:last-child {
+    background-color: lightpink;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
     align-items: center;
 }
 
-.child {
-    flex: 1 1 300px;
-    margin: 10px;
-    background-color: #eee;
-    border-radius: 10px;
+.grid-item {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
     padding: 20px;
 }
 
@@ -191,9 +268,19 @@ button:active {
     }
 }
 
-/* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+/* Import the font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* Set the font family for the body text */
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Set the font weight for the h1 heading */
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
