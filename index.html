@@ -168,94 +168,106 @@
 
             </section>
         </div>
+
+
+        <footer>
+
+            <hr>
+
+            <h2 id="new-meeting">New Meeting</h2>
+            <form onsubmit="alert('New meeting added')">
+                <div class="form-parts">
+                    <label><strong>Week number:</strong></label>
+                    <input list="week"><br>
+                    <datalist id="week">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                    </datalist>
+                </div>
+
+                <div class="form-parts">
+                    <label><strong>Meeting title: </strong></label>
+                    <input type="text" placeholder="Enter title:"><br>
+                </div>
+
+                <div class="form-parts">
+                    <label><strong>Meeting date:</strong></label>
+                    <input type="date"><br>
+                </div>
+
+                <div class="form-parts">
+                    <fieldset>
+                        <legend><strong>Who attended this meeting?</strong></legend>
+
+                        <input type="checkbox">
+                        <label>Person A</label><br>
+                        <input type="checkbox">
+                        <label>Person B</label><br>
+                        <input type="checkbox">
+                        <label>Person C</label><br>
+                        <input type="checkbox">
+                        <label>Person X</label><br>
+                        <input type="checkbox">
+                        <label>Person Y</label><br>
+                        <input type="checkbox">
+                        <label>Person Z</label><br>
+                    </fieldset><br>
+                </div>
+
+                <div class="form-parts">
+                    <label><strong>Summary:</strong></label><br>
+                    <textarea rows="5" cols="33"></textarea><br>
+                </div>
+
+                <div class="form-parts">
+                    <fieldset>
+                        <legend><strong>Assignments to add:</strong></legend>
+
+                        <input type="radio">
+                        <label>Lab 3</label><br>
+                        <input type="radio">
+                        <label>Lab 4</label><br>
+                        <input type="radio">
+                        <label>Lab 5</label><br>
+                        <input type="radio">
+                        <label>Lab 6</label><br>
+                        <input type="radio">
+                        <label>Lab 7</label><br>
+                        <input type="radio">
+                        <label>Lab 8</label><br>
+                        <input type="radio">
+                        <label>Lab 9</label><br>
+                        <input type="radio">
+                        <label>Lab 10</label><br>
+                    </fieldset><br>
+                </div>
+
+                <div class="form-parts">
+                    <label><strong>Who is inputing this meeting? </strong></label>
+                    <select>
+                        <option value="">--Please choose an option--</option>
+                        <option>Person A</option>
+                        <option>Person B</option>
+                        <option>Person C</option>
+                        <option>Person X</option>
+                        <option>Person Y</option>
+                        <option>Person Z</option>
+                    </select><br>
+                </div>
+                <button>Submit</button>
+            </form>
+            <br>
+            <div><em>&copy; Software 110 Electronics</em></div>
+        </footer>
     </main>
-
-    <footer>
-
-        <hr>
-
-        <h2 id="new-meeting">New Meeting</h2>
-        <form onsubmit="alert('New meeting added')">
-
-            <label><strong>Week number:</strong></label>
-            <input list="week"><br>
-            <datalist id="week">
-                <option value="1"></option>
-                <option value="2"></option>
-                <option value="3"></option>
-                <option value="4"></option>
-                <option value="5"></option>
-                <option value="6"></option>
-                <option value="7"></option>
-                <option value="8"></option>
-                <option value="9"></option>
-                <option value="10"></option>
-            </datalist>
-
-            <label><strong>Meeting title: </strong></label>
-            <input type="text" placeholder="Enter title:"><br>
-
-            <label><strong>Meeting date:</strong></label>
-            <input type="date"><br>
-
-            <fieldset>
-                <legend><strong>Who attended this meeting?</strong></legend>
-
-                <input type="checkbox">
-                <label>Person A</label><br>
-                <input type="checkbox">
-                <label>Person B</label><br>
-                <input type="checkbox">
-                <label>Person C</label><br>
-                <input type="checkbox">
-                <label>Person X</label><br>
-                <input type="checkbox">
-                <label>Person Y</label><br>
-                <input type="checkbox">
-                <label>Person Z</label><br>
-            </fieldset><br>
-
-            <label><strong>Summary:</strong></label><br>
-            <textarea rows="5" cols="33"> Input text... </textarea><br>
-
-            <fieldset>
-                <legend><strong>Assignments to add:</strong></legend>
-
-                <input type="radio">
-                <label>Lab 3</label><br>
-                <input type="radio">
-                <label>Lab 4</label><br>
-                <input type="radio">
-                <label>Lab 5</label><br>
-                <input type="radio">
-                <label>Lab 6</label><br>
-                <input type="radio">
-                <label>Lab 7</label><br>
-                <input type="radio">
-                <label>Lab 8</label><br>
-                <input type="radio">
-                <label>Lab 9</label><br>
-                <input type="radio">
-                <label>Lab 10</label><br>
-            </fieldset><br>
-
-            <label><strong>Who is inputing this meeting? </strong></label>
-            <select>
-                <option value="">--Please choose an option--</option>
-                <option>Person A</option>
-                <option>Person B</option>
-                <option>Person C</option>
-                <option>Person X</option>
-                <option>Person Y</option>
-                <option>Person Z</option>
-            </select><br>
-
-            <button>Submit</button>
-        </form>
-        <br>
-        <div><em>&copy; Software 110 Electronics</em></div>
-    </footer>
-
 </body>
 
 </html>

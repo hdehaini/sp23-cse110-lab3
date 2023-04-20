@@ -52,6 +52,20 @@ footer {
     display: block;
 }
 
+form {
+    margin-bottom: 10px;
+}
+
+#new-meeting {
+    color: white;
+    font-size: 50px;
+}
+
+label,
+.form-parts {
+    padding-bottom: 10px;
+}
+
 h1 {
     color: hsl(210, 90%, 53%);
     background-color: #333;
