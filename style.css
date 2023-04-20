@@ -3,6 +3,10 @@ header {
     padding-left: 30px;
 }
 
-teamMember {
+.m1 {
+    align-items: center;
+}
+
+.teamMember {
     padding-top: 1cm;
 }
