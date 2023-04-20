@@ -1,12 +1,286 @@
 header {
-    background-color: rgb(128, 128, 128);
-    padding-left: 30px;
+    display: block;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
 }
 
-.m1 {
+main {
+    display: block;
+    background-color: rgb(245, 245, 245);
+    padding: 20px;
+    position: absolute;
+    top: 750px;
+    left: 50px;
+    width: 80%;
+    height: 90%;
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+    color: #333;
+}
+
+footer {
+    position: static;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    display: block;
+    clear: both;
+}
+
+h1 {
+    color: hsl(210, 78%, 40%);
+    background-color: #333;
+    font-size: 3rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    text-align: left;
+    width: 100%;
+}
+
+h2 {
+    color: rgba(0, 0, 255, 0.5);
+    text-decoration: underline;
+}
+
+h3 {
+    color: #ad0b0b;
+}
+
+h4 {
+    color: green;
+}
+
+/* Relative Units */
+div {
+    margin: 2rem auto;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 90%;
+    min-width: 90%;
+    padding: 30px 20px 10px 40px;
+}
+
+p {
+    margin-bottom: 1rem;
+    padding-top: 20px;
+    padding-right: 5%;
+    padding-bottom: 20px;
+    padding-left: 5%;
+    text-decoration: underline;
+    color: rgb(0, 128, 0);
+    text-align: justify;
+}
+
+/* Absolute Units ----------------------------------------------------*/
+img {
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    border-style: solid;
+    border-color: rgb(0, 110, 255);
+    border-width: 5px;
+    border-radius: 50%;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+/* Margin */
+.container {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 40px;
+}
+
+.box {
+    margin: 10px 20px 30px 40px;
+}
+
+/* border-style */
+.border-style {
+    border-top-style: solid;
+    border-right-style: dotted;
+    border-bottom-style: double;
+    border-left-style: dashed;
+}
+
+/* border-color */
+.border-color {
+    border-top-color: #ff0000;
+    border-right-color: #00ff00;
+    border-bottom-color: #0000ff;
+    border-left-color: #000;
+}
+
+/* border-width */
+.border-width {
+    border-top-width: 1px;
+    border-right-width: 2px;
+    border-bottom-width: 3px;
+    border-left-width: 4px;
+}
+
+/* border-radius */
+.border-radius {
+    border-radius: 10px;
+}
+
+nav {
+    background-color: rgb(255, 224, 178);
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+section {
+    display: block;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+aside {
+    display: inline;
+    background-color: rgb(176, 224, 230);
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+/* Display */
+div.display-none {
+    display: none;
+}
+
+div.display-block {
+    display: block;
+    background-color: rgb(135, 206, 250);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+div.display-inline-block {
+    display: inline-block;
+    background-color: rgb(240, 128, 128);
+    padding: 20px;
+    margin-right: 20px;
+}
+
+div.display-inline {
+    display: inline;
+    background-color: rgb(255, 255, 0);
+    padding: 20px;
+    margin-right: 20px;
+}
+
+/* Pseudo-class */
+a:hover {
+    color: #999;
+}
+
+button:active {
+    background-color: #999;
+}
+
+/* Layouts */
+.box-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border: 2px solid black;
+}
+
+/* Child element styles */
+.box-item {
+    background-color: lightblue;
+    border: 1px solid blue;
+    padding: 10px;
+    margin: 10px;
+    flex: 1;
+}
+
+.box-item:first-child {
+    background-color: lightgreen;
+}
+
+.box-item:last-child {
+    background-color: lightpink;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
     align-items: center;
 }
 
-.teamMember {
-    padding-top: 1cm;
+.grid-item {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* responsiveness */
+@media only screen and (max-width: 768px) {
+    .child {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+/* Import the font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Set the font family for the body text */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Set the font weight for the h1 heading */
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
