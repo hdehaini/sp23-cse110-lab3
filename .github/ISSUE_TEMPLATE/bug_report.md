@@ -2,7 +2,7 @@
 name: Bug report
 about: Form not working
 title: ''
-labels: bug
+labels: bug, documentation, enhancement, help wanted
 assignees: hdehaini
 
 ---
