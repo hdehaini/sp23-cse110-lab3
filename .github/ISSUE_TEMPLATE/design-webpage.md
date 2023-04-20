@@ -2,7 +2,7 @@
 name: Design Webpage
 about: Add styling to webpage
 title: ''
-labels: enhancement, help wanted
+labels: ASAP, enhancement, help wanted, style, UI
 assignees: hdehaini
 
 ---
