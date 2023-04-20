@@ -10,14 +10,14 @@ header {
 }
 
 main {
-    display: block;
+    display: grid;
     background-color: rgb(245, 245, 245);
     padding: 20px;
     position: absolute;
-    top: 750px;
-    left: 50px;
-    width: 80%;
-    height: 90%;
+    top: 10in;
+    left: 1.5cm;
+    width: 90%;
+    height: 100%;
 }
 
 body {
@@ -25,23 +25,40 @@ body {
     color: #333;
 }
 
+section {
+    display: grid;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.section-list {
+    display: grid;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
 footer {
-    position: static;
+    position: grid;
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
     display: block;
-    clear: both;
 }
 
 h1 {
-    color: hsl(210, 78%, 40%);
+    color: hsl(210, 90%, 53%);
     background-color: #333;
     font-size: 3rem;
-    margin-top: 2rem;
+    margin-top: .75lh;
     text-decoration: none;
-    text-align: left;
+    text-align: center;
     width: 100%;
 }
 
@@ -59,7 +76,9 @@ h4 {
 }
 
 /* Relative Units */
-div {
+.header,
+.teamMember,
+.navigtion {
     margin: 2rem auto;
     font-size: 1.5rem;
     line-height: 1.5;
@@ -69,8 +88,12 @@ div {
     padding: 30px 20px 10px 40px;
 }
 
+.navigtion {
+    display: flex;
+}
+
 p {
-    margin-bottom: 1rem;
+    margin-bottom: 1rlh;
     padding-top: 20px;
     padding-right: 5%;
     padding-bottom: 20px;
@@ -140,7 +163,6 @@ img {
 }
 
 nav {
-    background-color: rgb(255, 224, 178);
     padding: 10px;
     position: absolute;
     top: 0;
@@ -162,17 +184,8 @@ nav li {
 
 nav a {
     display: block;
-    color: black;
+    color: white;
     text-decoration: none;
-}
-
-section {
-    display: block;
-    background-color: white;
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-bottom: 20px;
 }
 
 aside {
@@ -213,6 +226,7 @@ div.display-inline {
 /* Pseudo-class */
 a:hover {
     color: #999;
+    text-decoration: underline;
 }
 
 button:active {
@@ -283,4 +297,49 @@ h3,
 h4 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+}
+
+/* Class Selector */
+.my-class {
+    color: rgb(126, 5, 5);
+}
+
+/* ID Selector */
+#my-id {
+    font-size: 16px;
+}
+
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+}
+
+/* Element Selector */
+h1 {
+    font-weight: bold;
+}
+
+/* Attribute Selector */
+input[type="text"] {
+    border: 1px solid #ccc;
+}
+
+/* Child Combinator */
+nav>ul {
+    margin: 10px;
+}
+
+/* General Sibling Combinator */
+h2~p {
+    margin-top: 10px;
+}
+
+/* Adjacent Sibling Combinator */
+h2+p {
+    margin-top: 10px;
+}
+
+/* Combining Two Selectors */
+ul.list-group li.active {
+    background-color: #ccc;
 }
