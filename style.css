@@ -1,12 +1,199 @@
-header {
-    background-color: rgb(128, 128, 128);
-    padding-left: 30px;
+/* Color */
+/* apply colors to your HTML elements */
+/* red, green, blue, alpha values */
+/* hex codes */
+/* hue, saturation, lightness, alpha values */
+/* Color name (i.e ‘orange’) */
+body {
+    background-color: rgb(245, 245, 245);
+    color: #333;
 }
 
-.m1 {
+h1 {
+    color: hsl(210, 100%, 50%);
+}
+
+h2 {
+    color: rgba(0, 0, 255, 0.5);
+}
+
+h3 {
+    color: #ad0b0b;
+}
+
+h4 {
+    color: green;
+}
+
+/* Background */
+/* apply background styles to your elements */
+h1 {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Unit */
+/* units of measurement for sizing and spacing your elements */
+/* Use 3 unique relative units total */
+/* Use 3 unique absolute units total */
+/* Relative Units */
+.container {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Absolute Units ----------------------------------------------------*/
+img {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 70%;
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    p {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Box Model */
+/* configure the containers that hold your HTML content */
+/* margin: spacing between html elements */
+/* padding: spacing within html elements */
+/* border: borders around html elements */
+/* You must use both long and short hand notations for each of the following: margin, padding, border */
+/* Auto margins: margin: auto */
+h1 {
+    margin: 0;
+    padding: 0.5rem;
+    border: 2px solid #333;
+}
+
+p {
+    margin: 0;
+    padding: 1rem;
+    border: 1px dotted #333;
+}
+
+/* Text */
+/* style your text */
+/* color */
+/* text-decoration */
+/* text-align */
+h1 {
+    text-align: center;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Display */
+/* Experiment with these values: none, block, inline-block, inline. Include at least two of them in your page. */
+/* Apply these values to the display property */
+div {
+    display: inline-block;
+}
+
+span {
+    display: block;
+}
+
+/* Sizing */
+/* set the height and width for an element */
+/* max-width */
+/* min-width */
+div {
+    max-width: 800px;
+    min-width: 400px;
+}
+
+/* Position */
+/* element positioning on the page */
+/* 2 of the following values: static, relative, fixed, absolute, sticky */
+/* Apply these values to the position property */
+h1 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Pseudo-class */
+/* elements that exist in your document conditionally */
+/* :hover */
+/* :active */
+a:hover {
+    color: #999;
+}
+
+button:active {
+    background-color: #999;
+}
+
+/* Layouts */
+/* Flexbox */
+/* allow your elements to lay themselves out automatically */
+/* apply flex to the display property */
+/* Must have more than two children within the element that is using flexbox. Must use minimum three of the flexbox related attributes */
+/* justify-content */
+/* align-items */
+/* flex-direction */
+/* layouts */
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
 }
 
-.teamMember {
-    padding-top: 1cm;
+.child {
+    flex: 1 1 300px;
+    margin: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* responsiveness */
+@media only screen and (max-width: 768px) {
+    .child {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
 }
